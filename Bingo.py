@@ -11,15 +11,8 @@ while len(Input) > 0:
 
 Output = [[], [], [], [], []]
 for i in range(25):
-    if i % 5 == 0:
-        Output[0].append(Intermediate[i])
-    if i % 5 == 1:
-        Output[1].append(Intermediate[i])
-    if i % 5 == 2:
-        Output[2].append(Intermediate[i])
-    if i % 5 == 3:
-        Output[3].append(Intermediate[i])
-    if i % 5 == 4:
-        Output[4].append(Intermediate[i])
+    for j in range(5):
+        if i % 5 == j:
+            Output[j].append(Intermediate[i])
 
 print(Output)
